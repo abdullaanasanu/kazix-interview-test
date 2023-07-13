@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: #050E1E;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --secondary-dark-800: #050e1e;
+  --secondary-dark-50: #13316C;
+  --secondary-dark-200: #0F2757;
+  --secondary-light-950: #7E8DA9;
+  --secondary-dark-500: #0B1B3D;
+  --secondary-dark-950: #030811;
+  --primary: #FBFF20;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-rgb);
+  font-family: 'Poppins', sans-serif;
+}
+
+.finished-match-card{
+  background: url("/assets/ground-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.score-box{
+  background: var(--secondary-dark-800);
+  opacity: 0.7;
+}
+
+.rate-box{
+  background: var(--secondary-dark-800);
+  opacity: 0.7;
+}
+
+.btn-main{
+  background: var(--secondary-dark-50);
+  border: 1.5px solid var(--secondary-dark-200);
+}
+
+.btn-arrow{
+  background: var(--secondary-dark-200);
+}
+
+.match-card{
+  background: var(--secondary-dark-200);
+}
+
+.match-card .time{
+  color: var(--secondary-light-950);
+}
+
+.match-card .team-logo{
+  height: 18px !important;
+  width: 18px !important;
+  object-fit: contain;
+}
+
+.btn-action{
+  background: var(--secondary-dark-500);
+}
+
+.btn-selected{
+  background: var(--primary);
+  color: var(--secondary-dark-950);
+}
+
+.btn-rating{
+  background: var(--primary);
+  color: var(--secondary-dark-950);
+}

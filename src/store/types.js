@@ -1,0 +1,2 @@
+export const GET_MATCHES = 'GET_MATCHES';
+export const SET_SELECTED_MATCH = 'SET_SELECTED_MATCH';
